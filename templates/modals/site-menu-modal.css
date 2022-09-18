@@ -1,0 +1,137 @@
+#site-menu {
+  width: 320px;
+  height: 480px;
+}
+
+#site-menu .area1 {
+  font-size: 2rem;
+  height: 8.3%;
+  border-bottom: 0.1rem solid black;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+} 
+
+#site-menu .area2 {
+  padding: 1rem 0;
+}
+
+#site-menu .area2 label {
+  display: flex;
+  gap: 1rem;
+}
+
+#site-menu .area2 input[type="search"] {
+  min-height: 0;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+#site-menu .area2 svg {
+  width: 1.3rem;
+}
+
+#site-menu .area3 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 8.3%;
+}
+#site-menu .area3 li {
+  width: 30%;
+  height: 100%;
+}
+
+#site-menu .area3 button {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+}
+
+#site-menu .area3 .checkout-icon {
+  width: 1.15rem;
+}
+
+#site-menu .area3 .user-icon {
+  width: 1.4rem;
+}
+
+#site-menu .area4 {
+  height: 60.7%;
+}
+
+#site-menu .area4 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.2% 0;
+  height: 100%;
+}
+
+#site-menu .area4 li {
+  height: 15.6%;
+}
+
+#site-menu .area4 li a {
+  height: 100%;
+  min-height: 0;
+  font-size: 1.3rem;
+}
+
+#site-menu .area5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  height: 9%;
+  width: 100%;
+}
+
+#site-menu .area5 li {
+  height: 100%;
+  width: 15%;
+}
+
+#site-menu .area5 a {
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#site-menu .area5 .facebook-icon {
+  width: 1.4rem;
+}
+
+#site-menu .area5 .twitter-icon {
+  width: 1.2rem;
+}
+
+#site-menu .area5 .instagram-icon {
+  width: 1.4rem;
+}
+
+#site-menu .area5 .youtube-icon {
+  width: 1.8rem;
+}
+
+#site-menu .area5 .linked-in-icon {
+  width: 1.4rem;
+}
+
+#site-menu .area5 .tik-tok-icon {
+  width: 1.2rem;
+}
+
+#site-menu .area6 {
+  min-height: 0;
+  height: 8.3%;
+}
+
+@media only screen and (min-width: 600px) {
+  #site-menu {
+    width: 416px;
+    height: 624px;
+  }
+}

@@ -1,0 +1,126 @@
+/* CHAT ASIDE /////////////////////////// */
+
+/* CONFIGURATION 1 */
+#chat-aside {
+  display: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+#chat-aside button {
+  width: 100%;
+  height: 100%;
+}
+
+#chat-aside svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* CONFIGURATION 2 */
+@media only screen and (min-width: 1200px) {
+  #chat-aside {
+    display: block;
+  }
+}
+
+/* CHAT MODAL ////////////////////////// */
+#chat-modal {
+  position: fixed;
+  width: 320px;
+  height: 480px;
+  bottom: 0;
+  right: 0;
+}
+
+#chat-modal section {
+  height: 100%;
+  position: relative;
+}
+
+#chat-modal h3 {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}
+
+#chat-modal p {
+  padding: 0.4rem;
+}
+
+#chat-area {
+  width: 100%;
+  height: 77%;
+  overflow-y: scroll;
+}
+
+.user-message-container {
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.user-message {
+  max-width: 80%;
+  text-align: right;
+  background-color: aqua;
+  font-size: 0.9rem;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-overflow: ellipsis;
+}
+
+#chat-modal form {
+  padding-left: 1.7rem;
+}
+
+#chat-modal input {
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+#chat-modal input::placeholder {
+  font-size: 1rem;
+}
+
+#chat-modal .chat-modal-closer {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+#chat-modal .chat-modal-closer {
+  padding: 0.2rem 0.3rem;
+  line-height: 0;
+}
+
+#chat-modal .chat-modal-closer svg {
+  width: 1rem;
+}
+
+@media only screen and (min-width:600px) {
+  #chat-modal {
+    bottom: 1rem;
+    right: 1rem;
+    width: 17rem;
+    height: 28rem;
+  }
+
+  #chat-modal form {
+    padding-left: 1rem;
+  }
+  
+  #chat-modal input {
+    width: 94%;
+  }
+}

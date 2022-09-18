@@ -1,0 +1,9 @@
+ 
+#article1 .article-body-container,
+#article1 .comments-section {
+  display: none;
+}
+
+/* #article1 .comments ul {
+  display: none;
+} */

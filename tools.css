@@ -1,0 +1,14 @@
+.hidden-submit {
+  visibility: hidden;
+  position: absolute;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-gap {
+  gap: 0.3rem;
+}

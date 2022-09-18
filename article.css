@@ -1,0 +1,335 @@
+/* ARTICLE HEADER //////////////////////////////////////// */
+
+/* CONFIGURATION 1 /////////////////// */
+#article1 header {
+  height: 600px;
+  background-image: url(./assets/images/pic1-medium.webp);
+  background-size: 1200px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  border-bottom-style: solid;
+  border-bottom-width: 0.3rem;
+}
+
+#article1 header > *, #article1 header .text-header-area > * {
+  padding: 0.5rem;
+}
+
+#article1 header h2,
+#article1 header .sub-header,
+#article1 header .authorship {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0;
+  column-gap: 0.5rem;
+}
+
+#article1 header .text-header-area {
+  width: 100%;
+  border-style: solid;
+  border-bottom-width: 0.3rem;
+  line-height: 1.5;
+}
+
+#article1 h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+#article1 header .sub-header {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+#article1 .authorship {
+  padding-left: 0.5rem;
+  font-size: 1.2rem
+}
+
+#article1 .share-section {
+  display: none;
+}
+
+#article1 .article-share-modal-opener {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem
+}
+
+/* CONFIGURATION 2 //////////////// */
+@media only screen and (min-width: 600px) {
+  #article1 header h2,
+  #article1 header .sub-header,
+  #article1 header .authorship {
+    justify-content: center;
+  }
+
+  #article1 .share-section {
+    right: 0;
+    bottom: 0;
+    border-top-width: 0.3rem;
+    border-style: solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  #article1 .share-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  #article1 .share-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+  }
+  
+  #article1 .share-section a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #article1 .share-section a svg {
+    width: 60%;
+  }
+
+  #article1 header .article-share-modal-opener {
+    display: none;
+  }
+}
+
+/* CONFIGURATION 3 //////// */
+@media only screen and (min-width: 980px) {
+  #article1 header .text-header-area {
+    width: auto;
+    border-radius: 0 0 0.3rem 0;
+    border-right-width: 0.3rem;
+    padding: 1rem;
+    line-height: 2;
+  }
+
+  #article1 header h2,
+  #article1 header .sub-header,
+  #article1 header .authorship {
+    justify-content: flex-start;
+  }
+
+  #article1 .share-section {
+    right: 0;
+    bottom: 0;
+    width: auto;
+    border-radius: 0.3rem 0 0 0;
+    border-left-width: 0.3rem;
+    display: block;
+  }
+
+  #article1 .share-section h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* CONFIGURATION 4 ///// */
+@media only screen and (min-width: 1200px) {
+  #article1 header {
+    background-size: cover;
+  }
+}
+
+/* CONFIGURATION 5 ///////// */
+@media only screen and (min-width: 1500px) {
+  #article1 header {
+    background-position: 50% 50%;
+  }
+}
+
+/* CONFIGURATION 6 ////// */
+@media only screen and (min-width: 1920px) {
+  #article1 header {
+    background-image: url(./assets/images/pic1-large.webp);
+  }
+}
+
+
+/* ARTICLE BODY ////////////////////////////////////////// */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* CONFIGURATION 1 //////////////// */
+#article1 .article-body-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#article1 .article-body {
+  line-height: 2;
+  padding: 5rem 0;
+}
+
+#article1 .article-body h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#article1 .article-body p {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#article1 .article-body p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#article1 .article-body figure {
+  padding: 2rem 10vw;
+  border-top-width: 0.3rem;
+  border-bottom-width: 0.3rem;
+  border-style: solid;
+  margin: 2rem 0;
+}
+
+#article1 .article-body figcaption {
+  padding: 0 1rem;
+  display: flex;
+  column-gap: 0.6ch;
+  row-gap: 0rem;
+  flex-flow: wrap;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+/* CONFIGURATION 2 /////////////////////// */
+@media only screen and (min-width: 500px) {
+  #article1 .article-body-container {
+    font-size: 20px;
+  }
+}
+
+/* CONFIGURATION 3 ////////////////////// */
+@media only screen and (min-width: 900px) {
+  #article1 .article-body p, #article1 .article-body figure {
+    padding-left: 14vw;
+    padding-right: 14vw;
+  }
+}
+
+/* CONFIGURATION 4 /////////////////// */
+@media only screen and (min-width: 1200px) {
+
+  body {
+    background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.8), 
+      hsla(0, 0%, 0%, 0.8)
+    ), url("./assets/images/pic2.jpg") ;
+    background-size: 130%;
+    background-attachment: fixed;
+  }
+
+  #article1 .article-body {
+    width: 100ch;
+  }
+
+  #article1 .article-body p, #article1 .article-body figure {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+/* COMMENTS SECTION //////////////////////////////////// */
+#article1 .comments-section {
+  padding: 1rem;
+}
+
+#article1 .comments-section h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#article1 .comments-section > form {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#article1 .comments-section > form textarea {
+  resize: none;
+  width: 80%;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  height: 2.7rem;
+  padding: 0.5rem;
+  max-width: 40rem;
+}
+
+#article1 .comments-section .comments {
+  display: flex;
+  flex-direction: column;
+}
+
+#article1 .comments-section .comments .comment-area {
+  border-radius: 0.3rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  margin-bottom: 0.5em;
+}
+
+#article1 .comments-section .comments .comment-area > * {
+  padding: 0.5rem;
+}
+
+#article1 .comments-section .comments .authorship-info {
+  display: flex;
+  column-gap: 1em;
+  font-weight: bold;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+#article1 .comments-section .comments .comment {
+  font-size: 1.2em;
+}
+
+#article1 .comments-section .reply {
+  display: none;
+}
+
+#article1 .comments-section .reply input {
+  width: 100%;
+  resize: none;
+  font-size: 1.2rem;
+  height: 2rem;
+  max-width: 800px;
+}
+
+#article1 .comments-section .comments .comment-responses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+#article1 .comments-section details summary {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* CONFIGURATION 2 ////////////////////////////////////// */
+@media only screen and (min-width: 960px) {
+  #article1 .comments-section .comments .comment-area > details {
+    margin-left: 10rem;
+  }
+
+  #article1 .comments-section .comments .comment-area > details[open] summary {
+    display: none;
+  }
+}

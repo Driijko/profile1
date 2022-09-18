@@ -1,0 +1,36 @@
+#article-share-modal section {
+  width: 320px;
+  height: 480px;
+}
+
+#article-share-modal h3 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+#article-share-modal h3 svg {
+  width: 1.2rem;
+}
+
+#article-share-modal ul {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#article-share-modal li {
+  display: flex;
+  justify-content: center;
+}
+
+#article-share-modal a {
+  width: 50px;
+  height: 50px;
+}
+
+#article-share-modal ul svg {
+  width: 60%;
+}

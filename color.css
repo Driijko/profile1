@@ -1,0 +1,65 @@
+:root {
+  --color1: black;
+  --color1-1: hsl(0, 0%, 15%);
+  --color2: white;
+  --color2-1: hsla(0, 0%, 100%, 0.6);
+  --color2-2: hsla(0, 0%, 80%, 1);
+  --color3: magenta;
+  color: var(--color1);
+}
+
+svg path {
+  fill: var(--color1);
+}
+
+#site-header {
+  border-style: solid;
+  border-color: var(--color1);
+}
+
+.covering-modal section {
+  background-color: var(--color2);
+}
+
+#site-footer-areas > * {
+  border: 1px solid black;
+}
+
+#article1 .text-header-area,
+#article1 .share-section,
+#article1 header .article-share-modal-opener {
+  background-color: var(--color2-1);
+}
+
+#article1 header {
+  border-bottom-color: var(--color1);
+}
+
+#article1 header .text-header-area,
+#article1 header .share-section {
+  border-color: var(--color1);
+}
+
+#article1 .article-body {
+  line-height: 2;
+  background-image: linear-gradient(
+    var(--color2-2) 0%,
+    var(--color2-1) 10%,
+    var(--color2-1) 90%,
+    var(--color2-2) 100%
+  );
+}
+
+#article1 .article-body figure {
+  background-color: var(--color1-1);
+  color: var(--color2);
+  border-color: var(--color1);
+}
+
+#article1 .comments-section {
+  background-color: var(--color2);
+}
+
+#article1 .comments-section .comments .comment-area {
+  border-color: var(--color1);
+}

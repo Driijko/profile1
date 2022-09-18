@@ -1,0 +1,42 @@
+.covering-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.covering-modal .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.covering-modal .container {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.covering-modal section {
+  pointer-events: initial;
+  position: relative;
+}
+
+.covering-modal .modal-closer-button {
+  padding: 0.1rem 0.3rem;
+  line-height: 0;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.covering-modal .modal-closer-button svg {
+  width: 1rem;
+}
