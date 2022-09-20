@@ -1,11 +1,12 @@
 /* GENERAL ///////////////////////////////// */
 :root {
   --color1: black;
-  --color1-1: hsl(0, 0%, 15%);
+  --color1-1: hsla(0, 0%, 0%, 0.9);
   --color2: white;
   --color2-1: hsla(0, 0%, 100%, 0.6);
   --color2-2: hsla(0, 0%, 80%, 1);
   --color3: hsl(0, 100%, 70%);
+  --color4: hsl(230, 100%, 80%);
   background-color: var(--color1);
   color: var(--color2);
 }
@@ -19,12 +20,17 @@ svg path {
   border-color: var(--color2);
 }
 
-#site-header .log-in-modal-opener {
-  color: var(--color3);
+
+
+/* MODALS //////////////////////////////////////// */
+
+.covering-modal .background {
+  background-color: var(--color1-1);
 }
 
 .covering-modal section {
-  background-color: var(--color2);
+  background-color: var(--color1);
+  color: var(--color2);
 }
 
 #site-footer-areas > * {

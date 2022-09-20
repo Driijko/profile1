@@ -1,6 +1,7 @@
 /* LAYOUT //////////////////////////// */
 #site-header {
-  height: 7.5rem;
+  height: 5rem;
+  border-bottom-style: solid;
   border-bottom-width: 0.3rem;
   position: relative;
 }
@@ -25,11 +26,11 @@
   font-size: 2rem;
 }
 
-#site-header .area1 p {
-  display: none;
+#site-header .area1 svg {
+  width: 2.2rem;
 }
 
-#site-header .area2, #site-header .area3 {
+#site-header .area2 {
   display: none;
 }
 
@@ -46,17 +47,12 @@
   width: 2rem;
 }
 
-/* CONFIGURATION 2 //////////////////////////////////// */
-@media only screen and (min-width: 380px) {
-  #site-header .area1 p {
-    display: block;
-    font-style: italic;
-    font-size: 0.9rem;
-  }
-}
+/* CONFIGURATION 2 /////////////////////// */
+@media only screen and (min-width: 850px) {
 
-/* CONFIGURATION 3 /////////////////////// */
-@media only screen and (min-width: 892px) {
+  #site-header {
+    height: 8rem;
+  }
 
   #site-header .area1 {
     width: 100%;
@@ -67,8 +63,11 @@
   }
   
   #site-header .area2 {
-    display: block;
-    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    bottom: 10%;
     width: 100%;
   }
   
@@ -76,59 +75,10 @@
     gap: 3rem;
     display: flex;
     justify-content: space-evenly;
-    padding: 0 5rem;
   }
 
-  #site-header .area3 {
-    display: flex;
-    font-size: 0.85rem;
-    gap: 1rem;
-    right: 1.5rem;
-    top: 10%;
-  }
-
-  #site-header .area3 form {
-    padding-right: 0.5rem;
-  }
-  
-  #site-header .area3 .search-icon {
-    width: 1.1rem;
-  }
-  
-  #site-header .area3 input[type="search"] {
-    transform: scale(0);
-    border: none;
-    transform-origin: 100% 50%;
-    transition: transform 0.5s ease-out;
-    background-color: transparent;
-    margin-right: 0.5rem;
-  }
-  
-  #site-header .area3 input[type="search"]:focus {
-    transform: scale(1);
-    border: 0.1rem solid black;
-    border-radius: 0.2rem;
-  }
-  
-  #site-header .area3 input {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  
-  #site-header .area3 form button[type="submit"] {
-    position: absolute;
-  }
-  
-  #site-header .area3 .checkout-icon {
-    width: 0.9rem;
-  }
-  
-  #site-header .area3 .share-icon {
-    width: 1rem;
-  }
-  
-  #site-header .area3 .user-icon {
-    width: 1.1rem;
+  #site-header .log-in-modal-opener svg {
+    width: 1.3rem;
   }
 
   #site-header .area4 {
@@ -136,8 +86,12 @@
   }
 }
 
-/* CONFIGURATION 4 /////////////////////// */
-@media only screen and (min-width: 1250px) {
+/* CONFIGURATION 3 /////////////////////// */
+@media only screen and (min-width: 1200px) {
+
+  #site-header {
+    height: 5rem;
+  }
 
   #site-header .area1 {
     top: 0%;
@@ -149,10 +103,9 @@
   }
   
   #site-header .area2 {
-    display: block;
     width: initial;
     right: 3%;
-    bottom: 0%;
+    bottom: 30%;
   }
   
   #site-header .area2 ul {

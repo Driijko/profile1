@@ -8,7 +8,6 @@ a path {
 
 @media (hover: hover) {
   a:hover, a:focus {
-    background-color: var(--color3);
   }
 }
 
@@ -25,7 +24,6 @@ button path {
 }
 
 button:hover, button:focus {
- background-color: var(--color3);
 }
 
 button:hover path, button:focus path {
@@ -41,7 +39,6 @@ label path {
 }
 
 label:hover, label:focus {
- background-color: var(--color3);
 }
 
 label:hover path, label:focus path {
@@ -71,9 +68,43 @@ input:hover + svg path, input:focus + svg path {
 
 }
 
+#site-header .log-in-modal-opener {
+  color: var(--color3);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+@media (hover:hover) {
+  #site-header .log-in-modal-opener:hover,
+  #site-header .log-in-modal-opener:focus {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+}
+
 .button-style1 {
   border-width: 0.09rem;
   border-style: solid;
   padding: 0.7rem;
   border-radius: 0.5rem;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.link-style1 {
+  transition: color 0.5s ease-out;
+}
+
+@media (hover:hover) {
+  .link-style1:hover, .link-style1:focus {
+    color: var(--color3);
+  }
+
+  .button-style1:hover, .button-style1:focus {
+    background-color: var(--color4);
+    border-color: var(--color4);
+    color: var(--color1);
+  }
 }

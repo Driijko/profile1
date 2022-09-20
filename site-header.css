@@ -77,6 +77,11 @@
     justify-content: space-evenly;
   }
 
+  #site-header .log-in-modal-opener {
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+  }
+
   #site-header .log-in-modal-opener svg {
     width: 1.3rem;
   }
@@ -105,7 +110,7 @@
   #site-header .area2 {
     width: initial;
     right: 3%;
-    bottom: 30%;
+    bottom: 25%;
   }
   
   #site-header .area2 ul {
