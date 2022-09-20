@@ -1,20 +1,26 @@
+/* GENERAL ///////////////////////////////// */
 :root {
   --color1: black;
   --color1-1: hsl(0, 0%, 15%);
   --color2: white;
   --color2-1: hsla(0, 0%, 100%, 0.6);
   --color2-2: hsla(0, 0%, 80%, 1);
-  --color3: magenta;
-  color: var(--color1);
+  --color3: hsl(0, 100%, 70%);
+  background-color: var(--color1);
+  color: var(--color2);
 }
 
 svg path {
-  fill: var(--color1);
+  fill: currentColor;
 }
 
+/* SITE HEADER //////////////////////////////////// */
 #site-header {
-  border-style: solid;
-  border-color: var(--color1);
+  border-color: var(--color2);
+}
+
+#site-header .log-in-modal-opener {
+  color: var(--color3);
 }
 
 .covering-modal section {

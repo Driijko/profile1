@@ -17,7 +17,7 @@ a:hover path, a:focus path {
 }
 
 button {
-  border: 1px solid var(--color1);
+
 }
 
 button path {
@@ -69,4 +69,11 @@ input:hover, input:focus {
 
 input:hover + svg path, input:focus + svg path {
 
+}
+
+.button-style1 {
+  border-width: 0.09rem;
+  border-style: solid;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
