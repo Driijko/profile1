@@ -3,8 +3,7 @@
   --color1: black;
   --color1-1: hsla(0, 0%, 0%, 0.9);
   --color2: white;
-  --color2-1: hsla(0, 0%, 100%, 0.6);
-  --color2-2: hsla(0, 0%, 80%, 1);
+  --color2-1: hsl(0, 0%, 70%);
   --color3: hsl(0, 100%, 70%);
   --color4: hsl(230, 100%, 80%);
   background-color: var(--color1);
@@ -20,6 +19,16 @@ svg path {
   border-color: var(--color2);
 }
 
+/* SITE FOOTER //////////////////////////////// */
+#site-footer-areas > * {
+  border-color: var(--color2-1);
+  color: var(--color2-1);
+}
+
+#site-footer-text-header {
+  color: var(--color2);
+}
+
 
 
 /* MODALS //////////////////////////////////////// */
@@ -33,9 +42,7 @@ svg path {
   color: var(--color2);
 }
 
-#site-footer-areas > * {
-  border: 1px solid black;
-}
+
 
 #article1 .text-header-area,
 #article1 .share-section,

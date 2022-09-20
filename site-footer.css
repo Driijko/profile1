@@ -12,6 +12,8 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  border-width: 0.1rem;
+  border-style: solid;
 }
 
 #site-footer-areas h1 {
@@ -19,7 +21,7 @@
 }
 
 #site-footer-areas h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* TEXT HEADER */
@@ -28,9 +30,13 @@
   gap: 0.5rem;
 }
 
-#site-footer-text-header p {
-  font-size: 0.9rem;
-  font-style: italic;
+#site-footer-text-header h1 a {
+  display: flex;
+  flex-direction: column;
+}
+
+#site-footer-text-header h1 a svg {
+  width: 1.7rem;
 }
 
 /* CONTACT */
@@ -40,23 +46,28 @@
 
 #site-footer-contact address {
   height: 100%;
+  width: 80%;
+  width: 256px;
 }
 
 #site-footer-contact address ul {
   flex-direction: column;
   line-height: 1.2;
-  gap: 1.5rem;
+  gap: 1rem;
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address > ul > li {
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address a {
   text-align: center;
   gap: 0.7rem;
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address a div {
@@ -69,49 +80,20 @@
   font-size: 0.9rem;
 }
 
-#site-footer-contact address .opening-hours {
-  gap: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
+/* QUICK LINKS  */
+#site-footer-quick-links {
+  height: 20rem;
+}
+#site-footer-quick-links ul {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem 0 2rem 0
 }
 
-#site-footer-contact address .opening-hours span {
-  padding-left: 0.5rem;
-}
-
-/* SOCIAL MEDIA  */
-#site-footer-social-media h3 svg {
-  width: 1rem;
-}
-
-#site-footer-social-media ul {
-  gap: 4vw;
-}
-
-#site-footer-social-media .facebook-icon {
-  width: 1.6rem;
-}
-
-#site-footer-social-media .twitter-icon {
-  width: 1.5rem;
-}
-
-#site-footer-social-media .instagram-icon {
-  width: 1.7rem;
-}
-
-#site-footer-social-media .youtube-icon {
-  width: 2rem;
-}
-
-#site-footer-social-media .linked-in-icon {
-  width: 1.5rem;
-}
-
-#site-footer-social-media .tik-tok-icon {
-  width: 1.5rem;
+#site-footer-quick-links a[href="./sign-up.html"] {
+  font-size: 0.88rem;
 }
 
 /* NEWSLETTER */
@@ -136,14 +118,35 @@
 }
 
 #site-footer-newsletter .button-container {
-  margin-top: 1rem;
+  margin: 2rem 0 1.5rem 0;
   text-align: center;
 }
 
 #site-footer-newsletter button {
   border-width: 0.09rem;
-  padding: 0.3rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.2rem;
+}
+
+/* SOCIAL MEDIA  */
+#site-footer-social-media h3 svg {
+  width: 1rem;
+}
+
+#site-footer-social-media ul {
+  gap: 4vw;
+}
+
+#site-footer-social-media .facebook-icon {
+  width: 1.6rem;
+}
+
+#site-footer-social-media .twitter-icon {
+  width: 1.5rem;
+}
+
+#site-footer-social-media .linked-in-icon {
+  width: 1.5rem;
 }
 
 /* FOOTER BOTTOM  */
@@ -178,7 +181,7 @@
   }
 
   #site-footer-contact address > ul li {
-    width: 10rem;
+    width: 11rem;
   }
 
   #site-footer-contact address a {
@@ -189,11 +192,17 @@
     width: 10%;
   }
 
-  #site-footer-contact address .opening-hours li {
-    font-size: 0.9rem;
-    width: 100%;
-  }
+  /* QUICK LINKS */
 
+  #site-footer-quick-links {
+    height: 7rem;
+  }
+  #site-footer-quick-links ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+  }
 
   /* SOCIAL MEDIA */
   #site-footer-social-media {

@@ -1,9 +1,5 @@
- 
-#article1 .article-body-container,
-#article1 .comments-section {
-  display: none;
-}
-
-/* #article1 .comments ul {
+/* #site-footer-text-header,
+#site-footer-contact,
+#site-footer-quick-links {
   display: none;
 } */
