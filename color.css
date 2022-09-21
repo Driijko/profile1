@@ -12,11 +12,6 @@
   color: var(--color2);
 }
 
-/* dialog {
-  background-color: var(--color1);
-  color: var(--color2);
-} */
-
 svg path {
   fill: currentColor;
 }
