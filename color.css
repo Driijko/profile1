@@ -2,6 +2,7 @@
 :root {
   --color1: black;
   --color1-1: hsla(0, 0%, 0%, 0.9);
+  --color1-2: hsl(0, 0%, 5%);
   --color2: white;
   --color2-1: hsl(0, 0%, 70%);
   --color3: hsl(0, 100%, 70%);
@@ -9,6 +10,11 @@
   background-color: var(--color1);
   color: var(--color2);
 }
+
+/* dialog {
+  background-color: var(--color1);
+  color: var(--color2);
+} */
 
 svg path {
   fill: currentColor;
@@ -29,10 +35,13 @@ svg path {
   color: var(--color2);
 }
 
-
+/* CHAT ASIDE /////////////////////////////////// */
+#chat-aside {
+  border-color: var(--color2);
+  background-color: var(--color1-2);
+}
 
 /* MODALS //////////////////////////////////////// */
-
 .covering-modal .background {
   background-color: var(--color1-1);
 }
@@ -40,45 +49,4 @@ svg path {
 .covering-modal section {
   background-color: var(--color1);
   color: var(--color2);
-}
-
-
-
-#article1 .text-header-area,
-#article1 .share-section,
-#article1 header .article-share-modal-opener {
-  background-color: var(--color2-1);
-}
-
-#article1 header {
-  border-bottom-color: var(--color1);
-}
-
-#article1 header .text-header-area,
-#article1 header .share-section {
-  border-color: var(--color1);
-}
-
-#article1 .article-body {
-  line-height: 2;
-  background-image: linear-gradient(
-    var(--color2-2) 0%,
-    var(--color2-1) 10%,
-    var(--color2-1) 90%,
-    var(--color2-2) 100%
-  );
-}
-
-#article1 .article-body figure {
-  background-color: var(--color1-1);
-  color: var(--color2);
-  border-color: var(--color1);
-}
-
-#article1 .comments-section {
-  background-color: var(--color2);
-}
-
-#article1 .comments-section .comments .comment-area {
-  border-color: var(--color1);
 }

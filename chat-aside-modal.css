@@ -3,27 +3,34 @@
 /* CONFIGURATION 1 */
 #chat-aside {
   display: none;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-#chat-aside button {
-  width: 100%;
-  height: 100%;
-}
-
-#chat-aside svg {
-  width: 100%;
-  height: 100%;
 }
 
 /* CONFIGURATION 2 */
 @media only screen and (min-width: 1200px) {
+  #site-footer-live-chat {
+    display: none;
+  }
+  
   #chat-aside {
     display: block;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-width: 0.05rem;
+    border-style: solid;
+    border-radius: 0.3rem;
+  }
+
+  #chat-aside button {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #chat-aside svg {
+    width: 80%;
+    height: 80%;
   }
 }
 

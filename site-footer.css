@@ -83,6 +83,18 @@
   font-size: 0.9rem;
 }
 
+/* LIVE CHAT */
+#site-footer-live-chat button {
+  border-style: solid;
+  border-width: 0.05rem;
+  border-radius: 0.5rem;
+  width: 3.5rem;
+  height: 3rem;
+}
+#site-footer-live-chat svg {
+  width: 2rem;
+}
+
 /* QUICK LINKS  */
 #site-footer-quick-links {
   height: 20rem;
@@ -168,6 +180,14 @@
     font-size: 1.5rem;
   }
 
+  #site-footer-live-chat,
+  #site-footer-contact address > ul,
+  #site-footer-quick-links ul,
+  #site-footer-social-media,
+  #site-footer-newsletter {
+    flex-direction: row;
+  }
+
   /* CONTACT SECTION */
   #site-footer-contact {
     flex-direction: column;
@@ -193,7 +213,6 @@
   }
 
   #site-footer-contact address > ul {
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
@@ -211,6 +230,12 @@
     width: 10%;
   }
 
+  /* LIVE CHAT */
+  #site-footer-live-chat {
+    justify-content: center;
+    gap: 2rem;
+  }
+
   /* QUICK LINKS */
 
   #site-footer-quick-links {
@@ -218,7 +243,6 @@
   }
   #site-footer-quick-links ul {
     width: 100%;
-    flex-direction: row;
     justify-content: space-evenly;
     padding: 0;
   }
@@ -226,7 +250,6 @@
   /* NEWSLETTER */
   #site-footer-newsletter {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 3rem;
     padding: 0.5rem 2rem;
@@ -257,7 +280,6 @@
 
   /* SOCIAL MEDIA */
   #site-footer-social-media {
-    flex-direction: row;
     height: 7rem;
     justify-content: center;
     gap: 5rem;
@@ -294,6 +316,7 @@
   }
 
   #site-footer-contact address > ul,
+  #site-footer-live-chat,
   #site-footer-social-media,
   #site-footer-social-media ul,
   #site-footer-quick-links ul,
