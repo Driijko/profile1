@@ -50,3 +50,19 @@ svg path {
   background-color: var(--color1);
   color: var(--color2);
 }
+
+/* CHAT MODAL */
+#chat-modal {
+  border-color: var(--color2);
+}
+#chat-modal #chat-area {
+  background-image: linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color3)
+  );
+}
+
+#chat-modal form {
+  background-color: var(--color1);
+}
