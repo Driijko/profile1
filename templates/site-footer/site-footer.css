@@ -12,6 +12,8 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  border-width: 0.1rem;
+  border-style: solid;
 }
 
 #site-footer-areas h1 {
@@ -19,18 +21,7 @@
 }
 
 #site-footer-areas h3 {
-  font-size: 1.5rem;
-}
-
-/* TEXT HEADER */
-#site-footer-text-header {
-  align-items: center;
-  gap: 0.5rem;
-}
-
-#site-footer-text-header p {
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 1.3rem;
 }
 
 /* CONTACT */
@@ -38,85 +29,92 @@
   gap: 1rem;
 }
 
+#site-footer-contact h1 {
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+#site-footer-contact h1 a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#site-footer-contact h1 a svg {
+  width: 1.7rem;
+}
+
 #site-footer-contact address {
   height: 100%;
+  width: 80%;
+  width: 256px;
 }
 
 #site-footer-contact address ul {
   flex-direction: column;
   line-height: 1.2;
-  gap: 1.5rem;
+  gap: 1rem;
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address > ul > li {
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address a {
   text-align: center;
   gap: 0.7rem;
   height: 100%;
+  width: 100%;
 }
 
 #site-footer-contact address a div {
-  width: 20%;
+  width: 30%;
 }
 
 #site-footer-contact address a p {
-  width: 80%;
+  width: 70%;
   text-align: center;
   font-size: 0.9rem;
 }
 
-#site-footer-contact address .opening-hours {
-  gap: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
+/* LIVE CHAT */
+#site-footer-live-chat button {
+  border-style: solid;
+  border-width: 0.05rem;
+  border-radius: 0.5rem;
+  width: 3.5rem;
+  height: 3rem;
 }
-
-#site-footer-contact address .opening-hours span {
-  padding-left: 0.5rem;
-}
-
-/* SOCIAL MEDIA  */
-#site-footer-social-media h3 svg {
-  width: 1rem;
-}
-
-#site-footer-social-media ul {
-  gap: 4vw;
-}
-
-#site-footer-social-media .facebook-icon {
-  width: 1.6rem;
-}
-
-#site-footer-social-media .twitter-icon {
-  width: 1.5rem;
-}
-
-#site-footer-social-media .instagram-icon {
-  width: 1.7rem;
-}
-
-#site-footer-social-media .youtube-icon {
+#site-footer-live-chat svg {
   width: 2rem;
 }
 
-#site-footer-social-media .linked-in-icon {
-  width: 1.5rem;
+/* QUICK LINKS  */
+#site-footer-quick-links {
+  height: 20rem;
+}
+#site-footer-quick-links ul {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem 0 2rem 0
 }
 
-#site-footer-social-media .tik-tok-icon {
-  width: 1.5rem;
+#site-footer-quick-links a[href="./sign-up.html"] {
+  font-size: 0.88rem;
 }
 
 /* NEWSLETTER */
 #site-footer-newsletter {
   line-height: 2;
+  text-align: center;
 }
 
 #site-footer-newsletter form {
@@ -136,14 +134,35 @@
 }
 
 #site-footer-newsletter .button-container {
-  margin-top: 1rem;
+  margin: 2rem 0 1.5rem 0;
   text-align: center;
 }
 
 #site-footer-newsletter button {
   border-width: 0.09rem;
-  padding: 0.3rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.2rem;
+}
+
+/* SOCIAL MEDIA  */
+#site-footer-social-media h3 svg {
+  width: 1rem;
+}
+
+#site-footer-social-media ul {
+  gap: 6vw;
+}
+
+#site-footer-social-media .facebook-icon {
+  width: 1.6rem;
+}
+
+#site-footer-social-media .twitter-icon {
+  width: 1.5rem;
+}
+
+#site-footer-social-media .linked-in-icon {
+  width: 1.5rem;
 }
 
 /* FOOTER BOTTOM  */
@@ -158,12 +177,36 @@
 /* CONFIGURATION 2 ///////////////////////////////// */
 @media only screen and (min-width: 1100px) {
 
+  #site-footer h3 {
+    font-size: 1.5rem;
+  }
+
+  #site-footer-live-chat,
+  #site-footer-contact address > ul,
+  #site-footer-quick-links ul,
+  #site-footer-social-media,
+  #site-footer-newsletter {
+    flex-direction: row;
+  }
+
   /* CONTACT SECTION */
   #site-footer-contact {
+    flex-direction: column;
+    padding: 0rem;
+    gap: 0rem;
+    height: 12rem;
+  }
+
+  #site-footer-contact h1 {
+    border: none;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 0.07rem;
+    max-width: 100%;
+  }
+
+  #site-footer-contact h1 a {
     flex-direction: row;
-    padding: 1rem;
-    gap: 2rem;
-    height: 8rem;
   }
 
   #site-footer-contact address {
@@ -171,14 +214,13 @@
   }
 
   #site-footer-contact address > ul {
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
   }
 
   #site-footer-contact address > ul li {
-    width: 10rem;
+    width: 13rem;
   }
 
   #site-footer-contact address a {
@@ -189,40 +231,38 @@
     width: 10%;
   }
 
-  #site-footer-contact address .opening-hours li {
-    font-size: 0.9rem;
-    width: 100%;
-  }
-
-
-  /* SOCIAL MEDIA */
-  #site-footer-social-media {
-    flex-direction: row;
-    height: 5rem;
-  }
-
-  #site-footer-social-media ul {
-    width: 85%;
+  /* LIVE CHAT */
+  #site-footer-live-chat {
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    gap: 2rem;
+  }
+
+  /* QUICK LINKS */
+
+  #site-footer-quick-links {
+    height: 7rem;
+  }
+  #site-footer-quick-links ul {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
   }
 
   /* NEWSLETTER */
   #site-footer-newsletter {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 3rem;
-    padding: 0.5rem 1rem;
-    height: 5rem;
+    padding: 0.5rem 2rem;
+    justify-content: center;
+    height: 7rem;
   }
 
   #site-footer-newsletter form {
     display: flex;
     align-items: center;
     gap: 1rem;
-    width: 65%;
+    width: auto;
     justify-content: flex-start;
   }
 
@@ -233,10 +273,34 @@
   #site-footer-newsletter .button-container {
     margin: 0;
   }
+
+  #site-footer-newsletter button {
+    font-size: 0.8rem;
+    padding: 0rem 1rem;
+  }
+
+  /* SOCIAL MEDIA */
+  #site-footer-social-media {
+    height: 7rem;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  #site-footer-social-media h3 {
+    font-size: 1.7rem;
+  }
+
+  #site-footer-social-media ul {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
 }
 
-/* CONFIGURATION 4 */
-@media only screen and (min-width: 1415px) {
+/* CONFIGURATION 3 ///////////////////////////////// */
+@media only screen and (min-width: 1300px) {
   #site-footer {
     height: 24rem;
   }
@@ -249,12 +313,14 @@
 
   #site-footer-areas > * {
     width: 25%;
+    height: 100%;
   }
 
-  #site-footer-contact,
   #site-footer-contact address > ul,
+  #site-footer-live-chat,
   #site-footer-social-media,
   #site-footer-social-media ul,
+  #site-footer-quick-links ul,
   #site-footer-newsletter,
   #site-footer-newsletter form {
     flex-direction: column;
@@ -266,38 +332,37 @@
     height: initial;
   }
 
-  /* TEXT HEADER */
-  #site-footer-text-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
-  }
-
   /* CONTACT  */
-  #site-footer-contact {
-    gap: 1.4rem;
-  }
-
   #site-footer-contact address a {
     flex-direction: row;
   }
 
-  /* SOCIAL MEDIA */
-  #site-footer-social-media ul {
-    gap: 1.2rem;
+  /* NEWSLETTER */
+  #site-footer-newsletter {
+    gap: 0rem;
+    display: block;
+  }
+  #site-footer-newsletter h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
-  /* NEWSLETTER */
+  #site-footer-newsletter br {
+    display: block;
+  }
   #site-footer-newsletter form {
+    height: 60%;
     align-items: center;
-    gap: 2rem;
-    width: 80%;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
     text-align: left;
   }
 
   #site-footer-newsletter form label {
     max-width: 15rem;
+    max-width: 20rem;
   }
 
   #site-footer-newsletter input {
@@ -306,6 +371,26 @@
 
   #site-footer-newsletter span {
     padding: 0;
+  }
+
+  #site-footer-newsletter .button-container {
+    margin: 0;
+  }
+
+  #site-footer-newsletter button {
+    font-size: 1rem;
+  }
+
+  /* SOCIAL MEDIA */
+  #site-footer-social-media {
+    display: block;
+    text-align: center;
+  }
+  #site-footer-social-media ul {
+    gap: 0rem;
+    justify-content: space-around;
+    height: 90%;
+    padding: 2rem 0;
   }
 
 }

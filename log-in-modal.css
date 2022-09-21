@@ -1,6 +1,9 @@
 #log-in-modal section {
   width: 30rem;
   height: 30rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-radius: 0.5rem;
 }
 
 #log-in-modal h3 {

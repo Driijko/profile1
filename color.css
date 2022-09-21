@@ -6,6 +6,7 @@
   --color2: white;
   --color2-1: hsl(0, 0%, 70%);
   --color3: hsl(0, 100%, 70%);
+  --color3-1: hsl(0, 100%, 90%);
   --color4: hsl(230, 100%, 80%);
   background-color: var(--color1);
   color: var(--color2);
@@ -33,6 +34,11 @@ svg path {
 
 #site-footer-contact h1 {
   color: var(--color2);
+}
+
+#site-footer-live-chat button {
+  background-color: var(--color2);
+  color: var(--color1);
 }
 
 /* CHAT ASIDE /////////////////////////////////// */
@@ -65,4 +71,13 @@ svg path {
 
 #chat-modal form {
   background-color: var(--color1);
+}
+
+/* LOG-IN MODAL */
+#log-in-modal section {
+  border-color: var(--color2);
+}
+
+#log-in-modal h3 {
+  color: var(--color3);
 }

@@ -107,4 +107,12 @@ input:hover + svg path, input:focus + svg path {
     border-color: var(--color4);
     color: var(--color1);
   }
+
+  .input-style1:hover, .input-style1:focus-within {
+    color: var(--color3);
+  }
+
+  .input-style1:hover input, .input-style1:focus-within input {
+    background-color: var(--color3-1);
+  }
 }
