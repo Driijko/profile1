@@ -1,27 +1,36 @@
-const scrollingContainer = document.getElementById("scrolling-container");
+// CONSTANTS and VARIABLES //////////////////////////////////////////////
 const scrollSnapContainer = document.querySelector("#scroll-snap-container");
 const siteFooter = document.querySelector("#site-footer");
 const snapPoints = Array.from(document.querySelectorAll(".snap-point"));
 let currentSnapPoint = 0;
 let scrolling = false;
+let ts; //touch-start
 
+// FUNCTIONS //////////////////////////////////////////////////////////
+function snap(test1, test2) {
+  let conditionsMet = false;
+  let num;
+  if (test1 & currentSnapPoint < snapPoints.length -1) {
+    conditionsMet = true;
+    num = 1;
+  }
+  else if (test2 & currentSnapPoint > 0) {
+    conditionsMet = true;
+    num = -1;
+  }
+  if (conditionsMet) {
+    currentSnapPoint += num;
+    window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+  }
+}
+
+// EVENTS ////////////////////////////////////////////////////////////
 scrollSnapContainer.addEventListener("wheel", e => {
   e.preventDefault();
   if (scrolling === false) {
     scrolling = true;
 
-    if (e.deltaY < 0 & currentSnapPoint > 0) {
-      console.log("hi");
-
-      currentSnapPoint -= 1;     
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-
-    } 
-    else if (e.deltaY > 0 & currentSnapPoint < snapPoints.length - 1) {
-      currentSnapPoint += 1;
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-
-    }
+    snap(e.deltaY > 0, e.deltaY < 0);
 
     const timerId = setTimeout(()=> {
       scrolling = false;
@@ -30,20 +39,14 @@ scrollSnapContainer.addEventListener("wheel", e => {
 }, {passive: false});
 
 document.addEventListener("keydown", e => {
-  if ((e.key === "ArrowUp" || e.key ==="ArrowDown") && window.scrollY < siteFooter.getBoundingClientRect().top + window.scrollY) {
+  if (e.key === "ArrowUp" || e.key ==="ArrowDown") {
     e.preventDefault();
-    if (e.key === "ArrowUp" & currentSnapPoint > 0) {
-      currentSnapPoint -= 1;     
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-    }
-    else if (e.key === "ArrowDown" & currentSnapPoint < snapPoints.length - 1) {
-      currentSnapPoint += 1;
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+    if (e.repeat === false) {
+      snap(e.key === "ArrowDown", e.key === "ArrowUp");
     }
   }
 });
 
-let ts;
 scrollSnapContainer.addEventListener('touchstart', function (e){
   e.preventDefault();
    ts = e.touches[0].clientY;
@@ -51,12 +54,5 @@ scrollSnapContainer.addEventListener('touchstart', function (e){
 
 scrollSnapContainer.addEventListener('touchend', function (e){
    let te = e.changedTouches[0].clientY;
-   if(ts > te+5 & currentSnapPoint < snapPoints.length - 1){
-    currentSnapPoint += 1;
-    window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-   }
-   else if(ts < te-5 & currentSnapPoint > 0){
-    currentSnapPoint -= 1;     
-    window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-   }
+   snap(ts > te + 5, ts < te - 5);
 }, {passive: false});
