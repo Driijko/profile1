@@ -82,6 +82,17 @@ a, button, input {
   box-sizing: border-box;
 }
 
+/* No scroll bars */
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 dialog {
   margin: 0;
   padding: 0;
