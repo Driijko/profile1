@@ -1,6 +1,6 @@
+const scrollingContainer = document.getElementById("scrolling-container");
 const scrollSnapContainer = document.querySelector(".scroll-snap-container");
 const siteFooter = document.querySelector("#site-footer");
-console.log(scrollSnapContainer);
 const snapPoints = Array.from(document.querySelectorAll(".snap-point"));
 let currentSnapPoint = 0;
 let scrolling = false;
@@ -12,11 +12,13 @@ scrollSnapContainer.addEventListener("wheel", e => {
 
     if (e.deltaY < 0 & currentSnapPoint > 0) {
       currentSnapPoint -= 1;     
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      // window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      scrollingContainer.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
     } 
     else if (e.deltaY > 0 & currentSnapPoint < snapPoints.length - 1) {
       currentSnapPoint += 1;
-      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      // window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      scrollingContainer.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
     }
 
     const timerId = setTimeout(()=> {
@@ -42,7 +44,6 @@ document.addEventListener("keydown", e => {
 let ts;
 scrollSnapContainer.addEventListener('touchstart', function (e){
   e.preventDefault();
-  console.log(e.touches[0]);
    ts = e.touches[0].clientY;
 }, {passive: false});
 
