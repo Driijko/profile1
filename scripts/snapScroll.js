@@ -5,7 +5,7 @@ const snapPoints = Array.from(document.querySelectorAll(".snap-point"));
 let currentSnapPoint = 0;
 let scrolling = false;
 
-window.scrollTo(0, 0);
+window.onload=function(){ setTimeout(function(){ 		window.scrollTo(0, 1); 	}, 0); }
 
 scrollSnapContainer.addEventListener("wheel", e => {
   e.preventDefault();
