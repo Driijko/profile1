@@ -82,15 +82,23 @@ a, button, input {
   box-sizing: border-box;
 }
 
-html {
+/* html {
   height: -webkit-fill-available;
-}
+} */
+:root {height: 100%;}
 body {
   -ms-overflow-style: none;  
   scrollbar-width: none;  
   scroll-behavior: smooth;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /* min-height: 100vh;
+  min-height: -webkit-fill-available; */
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  border: 4px solid red;
+}
+
+body > * {
+  display: none;
 }
 
 body::-webkit-scrollbar {
