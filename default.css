@@ -82,11 +82,15 @@ a, button, input {
   box-sizing: border-box;
 }
 
-/* No scroll bars */
+html {
+  height: -webkit-fill-available;
+}
 body {
   -ms-overflow-style: none;  
   scrollbar-width: none;  
   scroll-behavior: smooth;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 body::-webkit-scrollbar {
