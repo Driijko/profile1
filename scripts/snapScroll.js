@@ -1,5 +1,5 @@
 const scrollingContainer = document.getElementById("scrolling-container");
-const scrollSnapContainer = document.querySelector(".scroll-snap-container");
+const scrollSnapContainer = document.querySelector("#scroll-snap-container");
 const siteFooter = document.querySelector("#site-footer");
 const snapPoints = Array.from(document.querySelectorAll(".snap-point"));
 let currentSnapPoint = 0;
@@ -11,14 +11,16 @@ scrollSnapContainer.addEventListener("wheel", e => {
     scrolling = true;
 
     if (e.deltaY < 0 & currentSnapPoint > 0) {
+      console.log("hi");
+
       currentSnapPoint -= 1;     
-      // window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-      scrollingContainer.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+
     } 
     else if (e.deltaY > 0 & currentSnapPoint < snapPoints.length - 1) {
       currentSnapPoint += 1;
-      // window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
-      scrollingContainer.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+      window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+
     }
 
     const timerId = setTimeout(()=> {

@@ -140,17 +140,17 @@ body {
 } */
 
 html {
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   width: 100%;
   overflow: hidden;
 }
 
 body {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   /* position: fixed; */
   /* prevent overscroll bounce*/
-  overflow-y: hidden;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   /* iOS velocity scrolling */
 }
