@@ -87,6 +87,7 @@ body {
   -ms-overflow-style: none;  
   scrollbar-width: none;  
   scroll-behavior: smooth; 
+  overscroll-behavior: contain;
 }
 
 body::-webkit-scrollbar {
