@@ -12,12 +12,17 @@ main header .background {
   height: 100%;
   background-image: url("./assets/images/pic1-small.webp");
   background-size: cover;
-  filter: blur(1px) brightness(0.8) hue-rotate(50deg);
+  filter: hue-rotate(50deg);
 }
 
 @media only screen and (min-width: 600px) {
   main header .background {
-    background-image: url("./assets/images/pic1.jpg");
+    background-image: url("./assets/images/pic1-medium.webp");
+  }
+}
+@media only screen and (min-width: 1920px) {
+  main header .background {
+    background-image: url("./assets/images/pic1-large.webp");
   }
 }
 
