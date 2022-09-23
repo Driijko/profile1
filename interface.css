@@ -97,6 +97,17 @@ input:hover + svg path, input:focus + svg path {
   transition: color 0.5s ease-out;
 }
 
+.interface-style1 {
+  background-color: var(--color3);
+  border-radius: 0.4rem;
+  color: var(--color1);
+  border: 0.1rem solid var(--color3);
+  transition-property: border-radius, color, border-color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  /* padding: 0.5rem; */
+}
+
 @media (hover:hover) {
   .link-style1:hover, .link-style1:focus {
     color: var(--color3);
@@ -120,5 +131,12 @@ input:hover + svg path, input:focus + svg path {
     background-color: var(--color3);
     border-color: var(--color3);
     color: var(--color2);
+  }
+
+  .interface-style1:hover, .interface-style1:focus {
+    background-color: var(--color1);
+    color: var(--color2);
+    border-color: var(--color2);
+    border-radius: 0;
   }
 }

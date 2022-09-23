@@ -75,6 +75,7 @@
     gap: 3rem;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   #site-header .log-in-modal-opener {
@@ -110,7 +111,7 @@
   #site-header .area2 {
     width: initial;
     right: 3%;
-    bottom: 25%;
+    bottom: 20%;
   }
   
   #site-header .area2 ul {

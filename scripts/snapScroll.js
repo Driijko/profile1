@@ -3,7 +3,6 @@ const scrollSnapContainer = document.querySelector("#scroll-snap-container");
 const snapPoints = Array.from(document.querySelectorAll(".snap-point")).map(snapPoint => {
   return snapPoint.getBoundingClientRect().top;
 });
-let interfaceActive = false;
 let currentSnapPoint = 0;
 let scrolling = false;
 let ts; //touch-start

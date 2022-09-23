@@ -47,11 +47,17 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 p a {
   text-decoration: underline;
   padding: 0 0.3rem;
+  display: inline;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  display: inline;
 }
 
 button, label, input {

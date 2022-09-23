@@ -9,3 +9,9 @@ html {
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: calc(20px + (var(--res) * 0.000002px));
+  }
+}
+
