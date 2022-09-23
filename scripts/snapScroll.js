@@ -48,8 +48,18 @@ document.addEventListener("keydown", e => {
 });
 
 scrollSnapContainer.addEventListener('touchstart', function (e){
-  e.preventDefault();
-   ts = e.touches[0].clientY;
+  console.log(e.target.tagName);
+  // if (e.target)
+  if (e.target.tagName === "INPUT" 
+    || e.target.tagName === "A"
+    || e.target.tagName === "LABEL"
+    || e.target.tagName === "BUTTON") {
+    e.stopPropagation();
+  }
+  else {
+    e.preventDefault();
+    ts = e.touches[0].clientY;
+  }
 }, {passive: false});
 
 scrollSnapContainer.addEventListener('touchend', function (e){

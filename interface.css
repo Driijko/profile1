@@ -115,4 +115,10 @@ input:hover + svg path, input:focus + svg path {
   .input-style1:hover input, .input-style1:focus-within input {
     background-color: var(--color3-1);
   }
+
+  #site-footer-live-chat button:hover, #site-footer-live-chat button:focus {
+    background-color: var(--color3);
+    border-color: var(--color3);
+    color: var(--color2);
+  }
 }
