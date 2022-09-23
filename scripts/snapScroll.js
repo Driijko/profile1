@@ -1,26 +1,23 @@
 // CONSTANTS and VARIABLES //////////////////////////////////////////////
 const scrollSnapContainer = document.querySelector("#scroll-snap-container");
-const siteFooter = document.querySelector("#site-footer");
-const snapPoints = Array.from(document.querySelectorAll(".snap-point"));
+const snapPoints = Array.from(document.querySelectorAll(".snap-point")).map(snapPoint => {
+  return snapPoint.getBoundingClientRect().top;
+});
+console.log(snapPoints);
+let interfaceActive = false;
 let currentSnapPoint = 0;
 let scrolling = false;
 let ts; //touch-start
 
 // FUNCTIONS //////////////////////////////////////////////////////////
 function snap(test1, test2) {
-  let conditionsMet = false;
-  let num;
   if (test1 & currentSnapPoint < snapPoints.length -1) {
-    conditionsMet = true;
-    num = 1;
+    scrollSnapContainer.style.transform = `translateY(-${snapPoints[currentSnapPoint + 1]}px)`;
+    currentSnapPoint += 1;
   }
   else if (test2 & currentSnapPoint > 0) {
-    conditionsMet = true;
-    num = -1;
-  }
-  if (conditionsMet) {
-    currentSnapPoint += num;
-    window.scrollTo({top: snapPoints[currentSnapPoint].getBoundingClientRect().top + window.scrollY, behavior: "smooth"});
+    scrollSnapContainer.style.transform = `translateY(-${snapPoints[currentSnapPoint - 1]}px)`;
+    currentSnapPoint -= 1;
   }
 }
 
@@ -48,21 +45,10 @@ document.addEventListener("keydown", e => {
 });
 
 scrollSnapContainer.addEventListener('touchstart', function (e){
-  console.log(e.target.tagName);
-  // if (e.target)
-  if (e.target.tagName === "INPUT" 
-    || e.target.tagName === "A"
-    || e.target.tagName === "LABEL"
-    || e.target.tagName === "BUTTON") {
-    e.stopPropagation();
-  }
-  else {
-    e.preventDefault();
-    ts = e.touches[0].clientY;
-  }
+  ts = e.touches[0].clientY;
 }, {passive: false});
 
 scrollSnapContainer.addEventListener('touchend', function (e){
-   let te = e.changedTouches[0].clientY;
-   snap(ts > te + 5, ts < te - 5);
+  let te = e.changedTouches[0].clientY;
+  snap(ts > te + 5, ts < te - 5);
 }, {passive: false});

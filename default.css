@@ -83,7 +83,6 @@ a, button, input {
 }
 
 body {
-  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;  
   scrollbar-width: none;  
