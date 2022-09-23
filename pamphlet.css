@@ -4,12 +4,16 @@
   /* overflow: hidden; */
 }
 
+#window-height-test {
+  display: absolute;
+  width: 0;
+  height: 100vh;
+}
+
 #scroll-snap-container {
   height: calc(var(--vh, 1vh) * 100);
-  /* overflow: hidden; */
   transform: translateY(0);
   transition: transform 0.3s ease-out;
-  cursor: grab;
   position: fixed;
   top: 0;
 }
