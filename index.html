@@ -56,8 +56,6 @@
 </head>
 <body>
 
-
-
   <div id="scroll-snap-container">
 
     <header id="site-header" class="snap-point">
@@ -249,6 +247,125 @@
     </footer>
 
   </div>
+
+  <dialog id="site-menu-modal" class="covering-modal">
+
+    <div class="site-menu-modal-closer background"></div>
+  
+    <div class="container">
+      <section id="site-menu">
+    
+        <div class="area1">
+          <button class="center icon-gap3 log-in-modal-opener" type="button">
+            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+            </svg>
+            <span>Log-In</span>
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a class="center" href="./solutions.html" >Solutions</a>
+              </li>
+              <li>
+                <a class="center" href="./vision.html" >Vision</a>
+              </li>
+              <li>
+                <a class="center" href="./programs.html" >Programs</a>
+              </li>
+              <li>
+                <a class="center" href="./blog.html" >Blog</a>
+              </li>
+              <li>
+                <a class="center button-style1" href="./sign-up.html" >Get Started</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <button class="site-menu-modal-closer modal-closer-button area6" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <title>Close pop up</title>
+            <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+        </button>
+  
+      </section>
+    </div>
+  </dialog>
+
+  <aside id="chat-aside" >
+    <button class="chat-modal-opener center link-style1" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <title>Live chat with us</title><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z"/></svg>
+    </button>
+  </aside>
+
+  <dialog id="chat-modal">
+    <section>
+      <h3>Main Header</h3>
+      <p>Chat us up!</p>
+      <div id="chat-area">
+      </div>
+      <form class="center">
+        <input id="live-chat-user-input" type="text" maxlength="200" name="message" placeholder="Send us a message..." />
+        <button id="live-chat-submit" class="hidden-submit" type="submit"></button>
+      </form>
+      <button class="chat-modal-closer button-style1" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <title>Close pop up</title>
+          <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+      </button>
+    </section>
+  </dialog>
+
+  <dialog id="log-in-modal" class="covering-modal">
+    <div class="log-in-modal-closer background"></div>
+    <div class="container">
+      <section>
+
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/></svg><br/>
+          Log-In
+        </h3>
+
+        <form>
+          <div>
+            <label class="input-style1">
+              User Name:<br/>
+              <input type="text" name="user-name" required />
+            </label>
+          </div>
+          <div>
+            <label class="input-style1">
+              Password:<br/>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <div>
+            <button class="button-style1" type="submit">Log-In</button>
+          </div>
+        </form>
+
+        <div class="link-area">
+          <p>
+            Don't have an account?<br/>
+            <a class="link-style1" href="">Create an account</a>
+          </p>
+          <p>
+            Forgot your password?<br/>
+            <a class="link-style1" href="">Reset your password</a>
+          </p>
+        </div>
+        <div class="modal-closer-button-container">
+          <button class="log-in-modal-closer modal-closer-button button-style1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <title>Close pop up</title>
+              <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+          </button>
+        </div>
+      </section>
+    </div>
+  </dialog>
 
 
 
