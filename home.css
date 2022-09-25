@@ -1,4 +1,5 @@
-/* PAGE HEADER /////////////////////////////////////////////////////// */
+/* PORTRAIT //////////////////////////////////////////////////////////////// */
+/* PAGE HEADER //////////////////////////// */
 main header {
   position: relative;
   text-align: center;
@@ -52,25 +53,10 @@ main header .scroll-indicator svg {
 
 /* CONFIGURATION 2 ///////////////////////////// */
 @media only screen and (min-width: 1200px) {
-  main header .area1 {
-    text-align: left;
-    padding-top: 0;
-    padding-left: 3rem;
-    justify-content: center;
-    align-items: flex-start;
-    height: 70%;
-  }
 
-  main header h2 {
-    font-size: 3rem;
-  }
-
-  main header p {
-    font-size: 1.5rem;
-  }
 }
 
-/* SECTION 1 /////////////////////////////////////// */
+/* SECTION 1 ///////////////////////////////// */
 main .section1 {
   position: relative;
   text-align: center;
@@ -145,12 +131,73 @@ main .section1 ul li p {
 }
 
 @media only screen and (min-width: 600px) {
-  main .section1 p {
-    max-width: 400px;
+  p {
+    max-width: 400px !important;
   }
 }
 
+/* SECTION 2 ///////////////////////////////////////////// */
+main .section2 h3 {  
+  position: relative;
+  text-align: center;
+  line-height: 3;
+  font-size: 1.3rem;
+}
+
+main .section2 h3 .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    black, 
+    transparent 20%,
+    transparent 80%, 
+    black)
+    , url("./assets/images/pic3.jpg");
+  background-size: cover;
+  filter: hue-rotate(100deg) saturate(600%) brightness(0.7);
+}
+
+main .section2 .snap-pos2 {
+  flex-direction: column;
+  row-gap: 4vh;
+}
+
+main .section2 p {
+  text-align: center;
+  padding: 0 0.7rem;
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+main .section2 a {
+  width: 8rem;
+  padding: 1rem;
+}
+
+/* LANDSCAPE ////////////////////////////////////////////////////////////// */
 @media only screen and (orientation: landscape) {
+
+  /* PAGE HEADER ////////////////////////////////////// */
+  main header .area1 {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70%;
+  }
+
+  main header h2 {
+    font-size: 3rem;
+  }
+
+  main header p {
+    font-size: 1.5rem;
+  }
+
+  /* SECTION 1 /////////////////////////////////////// */
   main .section1 {
     border: 4px solid blue;
   }
@@ -215,6 +262,43 @@ main .section1 ul li p {
 
   main .section1 ul li p {
     font-size: 0.8rem;
+  }
+
+  /* SECTION 2 ////////////////////////////// */
+  main .section2 h3 {
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    border-width: 0.1rem;
+    border-style: solid;
+    top: 5% !important;
+    left: 5%;
+  }
+
+  main .section2 h3 .background {
+    background-image: linear-gradient(
+      black, 
+      transparent,
+      black)
+      , url("./assets/images/pic3.jpg");
+  }
+
+  main .section2 .snap-pos2 {
+    position: absolute;
+    padding: 0;
+    top: 5%;
+    width: 45%;
+    left: 50%;
+    height: 90%;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-left: none;
+    row-gap: 8vh;
+  }
+
+  main .section2 p {
+    max-width: none !important;
+    padding: 0 8vw;
   }
 }
 
