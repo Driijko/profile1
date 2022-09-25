@@ -12,7 +12,8 @@
 #scroll-snap-container {
   height: calc(var(--vh, 1vh) * 100);
   transform: translateY(0);
-  transition: transform 0.5s ease-out;
+  /* transition: transform 0.5s ease-out; */
+  transition: transform 0s ease-out;
   position: fixed;
   top: 0;
 }
@@ -20,5 +21,47 @@
 .vp {
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
-  border: 4px solid red;
+}
+
+.vp2 {
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 200);
+}
+
+.vp3 {
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 300);
+}
+
+.cruncher {
+  position: relative;
+}
+
+.snap-pos1, .snap-pos2, .snap-pos3 {
+  position: absolute;
+}
+
+.vp2 .snap-pos1, .vp3 .snap-pos1 {
+  top: 0%;
+}
+
+.vp2 .snap-pos2 {
+  top: 50%;
+}
+
+.vp3 .snap-pos2 {
+  top: 33.333%;
+}
+
+.vp3 .snap-pos3 {
+  top: 66.666%;
+}
+
+@media only screen and (orientation: landscape) {
+
+  .vp2.cruncher, .vp3.cruncher, 
+  .cruncher .vp2, .cruncher .vp3 {
+    /* top: 0%; */
+    height: calc(var(--vh, 1vh) * 100);
+  } 
 }

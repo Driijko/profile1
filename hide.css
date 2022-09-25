@@ -1,5 +1,3 @@
-/* #site-footer-text-header,
-#site-footer-contact,
-#site-footer-quick-links {
+#site-header, main header {
   display: none;
-} */
+}

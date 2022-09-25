@@ -1,9 +1,15 @@
 // CONSTANTS and VARIABLES //////////////////////////////////////////////
 const scrollSnapContainer = document.querySelector("#scroll-snap-container");
-const snapPoints = Array.from(document.querySelectorAll(".snap-point")).map(snapPoint => {
+// const snapPoints = Array.from(document.querySelectorAll(".snap-point")).map(snapPoint => {
+//   return snapPoint.getBoundingClientRect().top;
+// });
+const snapPoints = Array.from(document.querySelectorAll(viewportOrientation === "landscape" ? ".landscape-snap" : ".snap-point")).map(snapPoint => {
   return snapPoint.getBoundingClientRect().top;
 });
 let currentSnapPoint = 0;
+// let currentSnapPoint = 0;
+// snap(true, false);
+
 let scrolling = false;
 let ts; //touch-start
 

@@ -21,6 +21,30 @@ svg path {
   border-color: var(--color2);
 }
 
+/* MAIN SECTION 1 //////////////////////////////////// */
+main .section1 p {
+  color: var(--color2-1);
+}
+main .section1 ul li {
+  background-color: var(--color1-2);
+}
+
+main .section1 ul li svg {
+  color: var(--color3);
+}
+
+main .section1 ul li h4 {
+  color: var(--color4);
+}
+
+main .section1 .snap-pos1 {
+  border-color: var(--color2-1);
+}
+
+main .section1 ul {
+  border-color: var(--color2-1);
+}
+
 /* SITE FOOTER //////////////////////////////// */
 #site-footer-areas > * {
   border-color: var(--color2-1);
