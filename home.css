@@ -244,6 +244,38 @@ main .section3 dl dd:nth-of-type(5) {
   order: 9;
 }
 
+/* SECTION 4 /////////////////////////////////// */
+main .section4 {
+  flex-direction: column;
+  row-gap: 5vh;
+  width: 100%;
+}
+
+main .section4 h3 {
+  font-size: 2.5rem;
+}
+
+main .section4 ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+main .section4 li {
+  width: 100%;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  height: 20vh;
+}
+
+main .section4 li:nth-child(4) {
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+}
+
+main .section4 ul img {
+  padding: 0 6rem;
+}
+
 
 /* LANDSCAPE ////////////////////////////////////////////////////////////// */
 @media only screen and (orientation: landscape) {
@@ -397,6 +429,36 @@ main .section3 dl dd:nth-of-type(5) {
   main .section3 dl {
     flex-wrap: wrap;
     height: 6rem;
+    width: 100%;
+  }
+
+  /* SECTION 4 /////////////////////////////////// */
+  main .section4 {
+    row-gap: 5vh;
+  }
+
+  main .section4 h3 {
+    font-size: 3.5rem;
+  }
+
+  main .section4 ul {
+    flex-direction: row;
+  }
+
+  main .section4 li {
+    width: 25%;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-left: none;
+    height: 30vh;
+  }
+
+  main .section4 li:nth-child(4) {
+    border-right: none;
+  }
+
+  main .section4 ul img {
+    padding: 6vw;
     width: 100%;
   }
 }

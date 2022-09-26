@@ -1,3 +1,4 @@
-#site-header, main header, main .section1, main .section2 {
+#site-header, main header, main .section1, main .section2,
+main .section3 {
   display: none;
 }
