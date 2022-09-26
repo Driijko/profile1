@@ -6,9 +6,9 @@ const snapPoints = Array.from(
   )).map(snapPoint => {
   return snapPoint.getBoundingClientRect().top;
 });
-// let currentSnapPoint = 0;
-let currentSnapPoint = 4;
-snap(true, false);
+let currentSnapPoint = 0;
+// let currentSnapPoint = 4;
+// snap(true, false);
 
 let scrolling = false;
 let ts; //touch-start

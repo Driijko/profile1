@@ -45,6 +45,15 @@ main .section1 ul {
   border-color: var(--color2-1);
 }
 
+/* MAIN SECTION 3 /////////////////////////////////// */
+main .section3 dl dd {
+  color: var(--color3);
+}
+
+main .section3 dl dt {
+  color: var(--color2-1);
+}
+
 /* SITE FOOTER //////////////////////////////// */
 #site-footer-areas > * {
   border-color: var(--color2-1);

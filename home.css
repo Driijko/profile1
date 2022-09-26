@@ -176,6 +176,75 @@ main .section2 a {
   padding: 1rem;
 }
 
+/* SECTION 3 //////////////////////// */
+main .section3 {
+  flex-direction: column;
+  row-gap: 4vh;
+}
+
+main .section3 .background {
+  display: none;
+}
+
+main .section3 h3 {
+  font-size: 1.3rem;
+}
+
+main .section3 dl {
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+main .section3 dl dt {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+main .section3 dl dd {
+  font-size: 2.5rem;
+}
+
+main .section3 dl dt:nth-of-type(1) {
+  order: 2;
+}
+
+main .section3 dl dd:nth-of-type(1) {
+  order: 1;
+}
+
+main .section3 dl dt:nth-of-type(2) {
+  order: 4;
+}
+
+main .section3 dl dd:nth-of-type(2) {
+  order: 3;
+}
+
+main .section3 dl dt:nth-of-type(3) {
+  order: 6;
+}
+
+main .section3 dl dd:nth-of-type(3) {
+  order: 5;
+}
+
+main .section3 dl dt:nth-of-type(4) {
+  order: 8;
+}
+
+main .section3 dl dd:nth-of-type(4) {
+  order: 7;
+}
+
+main .section3 dl dt:nth-of-type(5) {
+  order: 10;
+}
+
+main .section3 dl dd:nth-of-type(5) {
+  order: 9;
+}
+
+
 /* LANDSCAPE ////////////////////////////////////////////////////////////// */
 @media only screen and (orientation: landscape) {
 
@@ -280,7 +349,7 @@ main .section2 a {
       black, 
       transparent,
       black)
-      , url("./assets/images/pic3.jpg");
+      , url("./assets/images/pic3-small.webp");
   }
 
   main .section2 .snap-pos2 {
@@ -300,6 +369,36 @@ main .section2 a {
     max-width: none !important;
     padding: 0 8vw;
   }
+
+  /* SECTION 3 /////////////////////////////////// */
+  main .section3 {
+    position: relative;
+    justify-content: flex-start;
+    padding-top: 10%;
+    row-gap: 10vh;
+  }
+
+  main .section3 .background {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-image: url("./assets/images/pic4-medium.webp");
+    background-size: cover;
+    filter: hue-rotate(150deg);
+  }
+
+  main .section3 h3 {
+    font-size: 2rem;
+  }
+
+  main .section3 dl {
+    flex-wrap: wrap;
+    height: 6rem;
+    width: 100%;
+  }
 }
 
 /* BACKGROUND IMAGES ////////////////////////////////////////// */
@@ -310,9 +409,18 @@ main .section2 a {
   main .section1 .background {
     background-image: url("./assets/images/pic2-medium.webp");
   }
+  main .section2 h3 .background {
+    background-image: url("./assets/images/pic3-medium.webp");
+  }
 }
 @media only screen and (min-width: 1920px) {
   main header .background {
     background-image: url("./assets/images/pic1-large.webp");
+  }
+  main .section2 h3 .background {
+    background-image: url("./assets/images/pic3-large.webp");
+  }
+  main .section3 .background {
+    background-image: url("./assets/images/pic4-large.webp");
   }
 }
