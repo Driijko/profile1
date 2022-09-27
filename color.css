@@ -61,6 +61,9 @@ main .section4 li {
 }
 
 /* SITE FOOTER //////////////////////////////// */
+#pamphlet-site-footer #site-footer-areas {
+  background-color: var(--color1);
+}
 #site-footer-areas > * {
   border-color: var(--color2-1);
   color: var(--color2-1);

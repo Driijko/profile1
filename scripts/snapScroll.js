@@ -7,7 +7,7 @@ const snapPoints = Array.from(
   return snapPoint.getBoundingClientRect().top;
 });
 let currentSnapPoint = 0;
-// let currentSnapPoint = 4;
+// let currentSnapPoint = 8;
 // snap(true, false);
 
 let scrolling = false;
