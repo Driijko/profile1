@@ -131,7 +131,7 @@ main .section1 ul li p {
 }
 
 @media only screen and (min-width: 600px) {
-  p {
+  .section2 p, .section3 p, .section5 p {
     max-width: 400px !important;
   }
 }
