@@ -51,11 +51,6 @@ main header .scroll-indicator svg {
   border-radius: 50%;
 }
 
-/* CONFIGURATION 2 ///////////////////////////// */
-@media only screen and (min-width: 1200px) {
-
-}
-
 /* SECTION 1 ///////////////////////////////// */
 main .section1 {
   position: relative;

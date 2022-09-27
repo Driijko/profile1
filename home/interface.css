@@ -1,0 +1,142 @@
+a {
+
+}
+
+a path {
+
+}
+
+@media (hover: hover) {
+  a:hover, a:focus {
+  }
+}
+
+a:hover path, a:focus path {
+
+}
+
+button {
+
+}
+
+button path {
+
+}
+
+button:hover, button:focus {
+}
+
+button:hover path, button:focus path {
+
+}
+
+label {
+
+}
+
+label path {
+
+}
+
+label:hover, label:focus {
+}
+
+label:hover path, label:focus path {
+
+}
+
+input {
+
+}
+
+input[type="text"] {
+
+}
+
+input[type="email"] {
+
+}
+
+input[type="search"] {
+}
+
+input:hover, input:focus {
+
+}
+
+input:hover + svg path, input:focus + svg path {
+
+}
+
+#site-header .log-in-modal-opener {
+  color: var(--color3);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+@media (hover:hover) {
+  #site-header .log-in-modal-opener:hover,
+  #site-header .log-in-modal-opener:focus {
+    background-color: var(--color3);
+    color: var(--color1);
+  }
+}
+
+.button-style1 {
+  border-width: 0.09rem;
+  border-style: solid;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.link-style1 {
+  transition: color 0.5s ease-out;
+}
+
+.interface-style1 {
+  background-color: var(--color3);
+  border-radius: 0.4rem;
+  color: var(--color1);
+  border: 0.1rem solid var(--color3);
+  transition-property: border-radius, color, border-color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  /* padding: 0.5rem; */
+}
+
+@media (hover:hover) {
+  .link-style1:hover, .link-style1:focus {
+    color: var(--color3);
+  }
+
+  .button-style1:hover, .button-style1:focus {
+    background-color: var(--color4);
+    border-color: var(--color4);
+    color: var(--color1);
+  }
+
+  .input-style1:hover, .input-style1:focus-within {
+    color: var(--color3);
+  }
+
+  .input-style1:hover input, .input-style1:focus-within input {
+    background-color: var(--color3-1);
+  }
+
+  #site-footer-live-chat button:hover, #site-footer-live-chat button:focus {
+    background-color: var(--color3);
+    border-color: var(--color3);
+    color: var(--color2);
+  }
+
+  .interface-style1:hover, .interface-style1:focus {
+    background-color: var(--color1);
+    color: var(--color2);
+    border-color: var(--color2);
+    border-radius: 0;
+  }
+}

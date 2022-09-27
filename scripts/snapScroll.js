@@ -1,4 +1,4 @@
-// CONSTANTS and VARIABLES //////////////////////////////////////////////
+// ELEMENTS     //////////////////////////////////////////////
 const scrollSnapContainer = document.querySelector("#scroll-snap-container");
 const snapPoints = Array.from(
   document.querySelectorAll(
@@ -6,9 +6,17 @@ const snapPoints = Array.from(
   )).map(snapPoint => {
   return snapPoint.getBoundingClientRect().top;
 });
+
 let currentSnapPoint = 0;
 // let currentSnapPoint = 8;
 // snap(true, false);
+
+if (viewportOrientation === "portrait" & (currentSnapPoint > 0 & currentSnapPoint < 5)) {
+  sticky1.style.display = "block";
+}
+else {
+  sticky1.style.display = "none";
+}
 
 let scrolling = false;
 let ts; //touch-start

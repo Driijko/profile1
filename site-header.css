@@ -87,6 +87,7 @@
     gap: 1rem;
     right: 1.5rem;
     top: 10%;
+    font-size: 1.2rem;
   }
 
   #site-header .log-in-modal-opener {
@@ -95,7 +96,7 @@
   }
 
   #site-header .log-in-modal-opener svg {
-    width: 1.3rem;
+    width: 1.4rem;
   }
 
   #site-header .area4 {

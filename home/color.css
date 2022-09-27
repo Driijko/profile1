@@ -23,30 +23,41 @@ svg path {
 }
 
 /* MAIN SECTION 1 //////////////////////////////////// */
-#sticky1 {
-  border-bottom-color: var(--color2-1);
-  background-color: var(--color1);
+main .section1 p {
+  color: var(--color2-1);
+}
+main .section1 ul li {
+  background-color: var(--color1-2);
 }
 
-main .section1 li {
-  border-color: var(--color2-2);
-}
-
-main .section1 svg {
+main .section1 ul li svg {
   color: var(--color3);
 }
 
-main .section1 h4 {
+main .section1 ul li h4 {
   color: var(--color4);
 }
 
-main p {
+main .section1 .snap-pos1 {
+  border-color: var(--color2-1);
+}
+
+main .section1 ul {
+  border-color: var(--color2-1);
+}
+
+/* MAIN SECTION 3 /////////////////////////////////// */
+main .section3 dl dd {
+  color: var(--color3);
+}
+
+main .section3 dl dt {
   color: var(--color2-1);
 }
 
-/* MAIN SECTION 2 ////////////////////////////////// */
-main .section2 h3 {
-  border-color: var(--color2-1);
+/* MAIN SECTION 4 //////////////////////////////////// */
+main .section4 li {
+  border-color: var(--color2-2);
 }
 
 /* SITE FOOTER //////////////////////////////// */

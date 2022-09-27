@@ -1,0 +1,26 @@
+/* MAIN SECTION 1 //////////////////////////////////// */
+#sticky1 {
+  border-bottom-color: var(--color2-1);
+  background-color: var(--color1);
+}
+
+main .section1 li {
+  border-color: var(--color2-2);
+}
+
+main .section1 svg {
+  color: var(--color3);
+}
+
+main .section1 h4 {
+  color: var(--color4);
+}
+
+main p {
+  color: var(--color2-1);
+}
+
+/* MAIN SECTION 2 ////////////////////////////////// */
+main .section2 h3 {
+  border-color: var(--color2-1);
+}
