@@ -153,9 +153,9 @@ main .section2 h3 .background {
     transparent 20%,
     transparent 80%, 
     black)
-    , url("./assets/images/pic3-small.webp");
+    , url("./assets/images/pic3.jpg");
   background-size: cover;
-  filter: hue-rotate(100deg) saturate(600%) brightness(0.7);
+  filter: brightness(0.15);
 }
 
 main .section2 .snap-pos2 {
@@ -297,7 +297,7 @@ main .section5 .background {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("./assets/images/pic9.jpg");
+  background-image: url("./assets/images/pic9-small.webp");
   background-size: cover;
   filter: brightness(0.7);
 }
@@ -418,14 +418,7 @@ main .section5 a {
     border-style: solid;
     top: 5% !important;
     left: 5%;
-  }
-
-  main .section2 h3 .background {
-    background-image: linear-gradient(
-      black, 
-      transparent,
-      black)
-      , url("./assets/images/pic3-small.webp");
+    font-size: 1.8rem;
   }
 
   main .section2 .snap-pos2 {
@@ -551,6 +544,9 @@ main .section5 a {
       black)
       , url("./assets/images/pic3-medium.webp");
   }
+  main .section5 .background {
+    background-image: url("./assets/images/pic9-medium.webp");
+  }
 }
 @media only screen and (min-width: 1920px) {
   main header .background {
@@ -566,5 +562,8 @@ main .section5 a {
   }
   main .section3 .background {
     background-image: url("./assets/images/pic4-large.webp");
+  }
+  main .section5 .background {
+    background-image: url("./assets/images/pic9-large.webp");
   }
 }
