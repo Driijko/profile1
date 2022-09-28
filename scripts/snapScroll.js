@@ -11,12 +11,7 @@ let currentSnapPoint = 0;
 // let currentSnapPoint = 8;
 // snap(true, false);
 
-if (viewportOrientation === "portrait" & (currentSnapPoint > 0 & currentSnapPoint < 5)) {
-  sticky1.style.display = "block";
-}
-else {
-  sticky1.style.display = "none";
-}
+
 
 let scrolling = false;
 let ts; //touch-start

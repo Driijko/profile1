@@ -12,7 +12,7 @@ main header .background {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/pic1-small.webp");
+  background-image: url("./assets/pic1-small.webp");
   background-size: cover;
   filter: hue-rotate(50deg);
 }
@@ -83,7 +83,7 @@ main .section1 .background {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/pic2-small.webp");
+  background-image: url("./assets/pic2-small.webp");
   background-size: cover;
   filter: brightness(0.1);
 }
@@ -148,7 +148,7 @@ main .section2 h3 .background {
     transparent 20%,
     transparent 80%, 
     black)
-    , url("./assets/images/pic3.jpg");
+    , url("./assets/pic3.jpg");
   background-size: cover;
   filter: brightness(0.15);
 }
@@ -292,7 +292,7 @@ main .section5 .background {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("./assets/images/pic9-small.webp");
+  background-image: url("./assets/pic9-small.webp");
   background-size: cover;
   filter: brightness(0.7);
 }
@@ -449,7 +449,7 @@ main .section5 a {
     top: 50%;
     width: 100%;
     height: 50%;
-    background-image: url("./assets/images/pic4-medium.webp");
+    background-image: url("./assets/pic4-medium.webp");
     background-size: cover;
     filter: hue-rotate(150deg);
   }
@@ -526,10 +526,10 @@ main .section5 a {
 /* BACKGROUND IMAGES ////////////////////////////////////////// */
 @media only screen and (min-width: 600px) {
   main header .background {
-    background-image: url("./assets/images/pic1-medium.webp");
+    background-image: url("./assets/pic1-medium.webp");
   }
   main .section1 .background {
-    background-image: url("./assets/images/pic2-medium.webp");
+    background-image: url("./assets/pic2-medium.webp");
   }
   main .section2 h3 .background {
     background-image: linear-gradient(
@@ -537,15 +537,15 @@ main .section5 a {
       transparent 20%,
       transparent 80%, 
       black)
-      , url("./assets/images/pic3-medium.webp");
+      , url("./assets/pic3-medium.webp");
   }
   main .section5 .background {
-    background-image: url("./assets/images/pic9-medium.webp");
+    background-image: url("./assets/pic9-medium.webp");
   }
 }
 @media only screen and (min-width: 1920px) {
   main header .background {
-    background-image: url("./assets/images/pic1-large.webp");
+    background-image: url("./assets/pic1-large.webp");
   }
   main .section2 h3 .background {
     background-image: linear-gradient(
@@ -553,12 +553,12 @@ main .section5 a {
       transparent 20%,
       transparent 80%, 
       black)
-      , url("./assets/images/pic3-large.webp");
+      , url("./assets/pic3-large.webp");
   }
   main .section3 .background {
-    background-image: url("./assets/images/pic4-large.webp");
+    background-image: url("./assets/pic4-large.webp");
   }
   main .section5 .background {
-    background-image: url("./assets/images/pic9-large.webp");
+    background-image: url("./assets/pic9-large.webp");
   }
 }

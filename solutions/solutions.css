@@ -7,7 +7,7 @@ main header {
 }
 
 main header .background {
-  background-image: url("./assets/pic1.jpg");
+  background-image: url("./assets/pic1-small.webp");
   filter: brightness(0.2);
 }
 
