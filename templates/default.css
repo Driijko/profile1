@@ -88,6 +88,10 @@ a, button, input {
   box-sizing: border-box;
 }
 
+:root {
+  --vph: calc(var(--vh) * 100);
+}
+
 body {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;  
@@ -119,10 +123,3 @@ svg {
   width: 1rem;
 }
 
-.page-area {
-  position: relative;
-}
-
-.page-area > * {
-  position: absolute;
-}

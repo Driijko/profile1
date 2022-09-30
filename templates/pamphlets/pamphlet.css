@@ -1,0 +1,20 @@
+:root, body {
+  height: var(--vph);
+  width: 100%;
+}
+
+#scroll-snap-container {
+  width: 100vw;
+  height: var(--vph);
+  transform: translateY(0);
+  transition: transform 0.7s ease-in-out;
+  /* transition: transform 0s ease-in-out; */
+  position: fixed;
+  top: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  .cruncher {
+    height: var(--vph);
+  } 
+}

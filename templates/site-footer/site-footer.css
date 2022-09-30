@@ -8,14 +8,14 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-image: url("./assets/images/site-footer-bkg-medium.webp");
+    background-image: url("../assets/images/site-footer-bkg-medium.webp");
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1920px) and (min-height: 720px) {
   #pamphlet-site-footer {
-    background-image: url("./assets/images/site-footer-bkg-large.webp");
+    background-image: url("../assets/images/site-footer-bkg-large.webp");
   }
 }
 

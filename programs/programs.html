@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- CHARACTER ENCODING ////////////////////////////////// -->
+  <!-- Always place at the top! -->
+  <meta charset="utf-8" />
+
+  <!-- MOBILE-SPECIFIC //////////////////////////////////// -->
+  <!-- Always place second! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="black" />
+
+  <!-- SEARCH ENGINE ////////////////////////////////////// -->
+  <!-- Description should be 160 characters or less -->
+  <meta name="description" content="Tech company profile showcasing a variety of web designs." />
+
+  <!-- BROWSER TAB ///////////////////////////////////// -->
+  <title>Tech Company</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+
+  <!-- Open Graph ////////////////////////////////////// -->
+  <meta property="og:title" content="Tech Company Profile" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:image" content="https://driijko.github.io/tech-company-profile/assets/icons/open-graph-logo.png" /> 
+  <meta property="og:description" content="Tech company profile showcasing a variety of web designs." />
+  <meta property="og:url" content="https://driijko.github.io/tech-company-profile" /> 
+  
+  <!-- CSS ///////////////////////////////////////// -->
+  <link rel="stylesheet" type="text/css" href="./programs/programs.css" />
+  <link rel="stylesheet" type="text/css" href="./colors.css" />
+  <link rel="stylesheet" type="text/css" href="./programs/programs-landscape.css" />
+  <link rel="stylesheet" type="text/css" href="./hide.css" />
+
+  <!-- GOOGLE FONTS ///////////////////////////// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+  <div id="scroll-snap-container">
+
+    <header id="site-header" class="snap-point landscape-snap">
+  
+      <div class="area1">
+        <h1>
+          <a class="center icon-gap link-style1" href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+            VISTA.IO
+          </a>
+        </h1>
+      </div>
+    
+      <!-- PRIMARY NAVIGATION -->
+      <div class="area2">
+    
+        <nav>
+          <ul>
+            <li>
+              <a class="link-style1 center" href="./solutions.html" >Solutions</a>
+            </li>
+            <li>
+              <a class="link-style1 center" href="./vision.html" >Vision</a>
+            </li>
+            <li>
+              <a class="link-style1 center" href="./programs.html" >Programs</a>
+            </li>
+            <li>
+              <a class="link-style1 center" href="./blog.html" >Blog</a>
+            </li>
+            <li>
+              <a class="button-style1 center" href="sign-up.html" >Get Started</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <button class="center log-in-modal-opener icon-gap2" type="button">
+          <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+          </svg>
+          <span>Log-In</span>
+        </button>
+      </div>
+
+      <div class="area3">
+        <button class="center log-in-modal-opener icon-gap2" type="button">
+          <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+          </svg>
+          <span>Log-In</span>
+        </button>
+      </div>
+    
+      <div class="area4">
+        <button class="site-menu-modal-opener center" type="button" aria-label="Menu">
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+          </svg>
+        </button>
+      </div>
+    
+    </header>
+  
+    <main>
+
+      <header class="center">
+        <h2>Data Analysis Programs</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br class="landscape"/> Laudantium quis blanditiis ex provident quibusdam.
+        </p>
+        <svg class="portrait scroll-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+        </svg>
+      </header>
+
+      <ul>
+        <li class="snap-point">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"/>
+          </svg>
+          <h3>Cloud Analytics<br/> for Beginners</h3>
+          <p>
+            2 Weeks<br/>
+            $80.00
+          </p>
+          <a class="interface-style1 center" href="">Join</a>
+        </li>
+        <li class="snap-point">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5  center45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
+          </svg>
+          <h3>Data Analytics<br class="landscape"/> Tools</h3>
+          <p>
+            4 Weeks<br/>
+            $120.00
+          </p>
+          <a class="interface-style1 center" href="">Join</a>
+        </li>
+        <li class="snap-point">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <path d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/>
+          </svg>
+          <h3>Data-driven<br/> Decision Making</h3>
+          <p>
+            8 Weeks<br/>
+            $150.00
+        </p>
+          <a class="interface-style1 center" href="">Join</a>
+        </li>
+      </ul>
+
+    </main>
+  
+    <div class="landscape-snap snap-point" id="pamphlet-site-footer">
+      <footer id="site-footer" >
+  
+        <div id="site-footer-areas">
+      
+          <section id="site-footer-contact">
+            <h1>
+              <a class="center icon-gap link-style1" href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                VISTA.IO
+              </a>
+            </h1>
+            <address>
+              <ul>
+                <li>
+                  <a href="tel:" class="center link-style1">
+                    <div class="center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <title>Telephone number</title>
+                        <path d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z"/></svg>
+                    </div>
+                    <p>123-456-7890</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:" class="center link-style1">
+                    <div class="center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                    </div>
+                    <p>info@mysite.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="center link-style1">
+                    <div class="center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <title>Physical location</title>
+                        <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+                    </div>
+                    <p>500 Terry Francois St,<br /> San Francisco,<br/> CA 94158</p>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </section>
+      
+          <section id="site-footer-live-chat">
+            <h3>Live Chat</h3>
+            <button class="chat-modal-opener center button-style1" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <title>Live chat with us</title><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z"/></svg>
+            </button>
+          </section>
+      
+          <div id="site-footer-quick-links" class="snap-point">
+            <ul>
+              <li>
+                <a class="link-style1" href="./solutions.html">Solutions</a>
+              </li>
+              <li>
+                <a class="link-style1" href="./vision.html">Vision</a>
+              </li>
+              <li>
+                <a class="link-style1" href="./programs.html">Programs</a>
+              </li>
+              <li>
+                <a class="link-style1" href="./blog.html">Blog</a>
+              </li>
+              <li>
+                <a class="button-style1" href="./sign-up.html">Get Started</a>
+              </li>
+            </ul>
+          </div>
+      
+          <section id="site-footer-newsletter" class="snap-point">
+            <h3>Subscribe to Our <br/>Newsletter</h3>
+            <form>
+              <label class="input-style1" for="email">
+                <span>Email:</span><br/>
+                <input id="email" type="email" name="email" required />
+              </label><br/>
+              <div class="button-container">
+                <button class="button-style1" type="submit">Submit</button>
+              </div>
+            </form>
+          </section>
+      
+          <section id="site-footer-social-media">
+            <h3>
+              Follow
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/></svg>
+            </h3>
+            <ul>
+              <li>
+                <a class="center link-style1" href="">
+                  <svg class="linked-in-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <title>Linked-In</title>
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                </a>
+              </li>
+              <li>
+                <a class="center link-style1" href="">
+                  <svg class="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <title>Facebook</title>
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="center link-style1" href="">
+                  <svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <title>Twitter</title>
+                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                    </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+      
+        </div>
+      
+        <div id="site-footer-bottom">
+          &copy Dreeko 2022.
+        </div>
+      
+      </footer>
+    </div>
+
+  </div>
+
+  <dialog id="site-menu-modal" class="covering-modal">
+
+    <div class="site-menu-modal-closer background"></div>
+  
+    <div class="container">
+      <section id="site-menu">
+    
+        <div class="area1">
+          <button class="center icon-gap3 log-in-modal-opener" type="button">
+            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+            </svg>
+            <span>Log-In</span>
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a class="center" href="./solutions.html" >Solutions</a>
+              </li>
+              <li>
+                <a class="center" href="./vision.html" >Vision</a>
+              </li>
+              <li>
+                <a class="center" href="./programs.html" >Programs</a>
+              </li>
+              <li>
+                <a class="center" href="./blog.html" >Blog</a>
+              </li>
+              <li>
+                <a class="center button-style1" href="./sign-up.html" >Get Started</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <button class="site-menu-modal-closer modal-closer-button area6" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <title>Close pop up</title>
+            <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+        </button>
+  
+      </section>
+    </div>
+  </dialog>
+
+  <aside id="chat-aside" >
+    <button class="chat-modal-opener center link-style1" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <title>Live chat with us</title><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z"/></svg>
+    </button>
+  </aside>
+
+  <dialog id="chat-modal">
+    <section>
+      <h3>Main Header</h3>
+      <p>Chat us up!</p>
+      <div id="chat-area">
+      </div>
+      <form class="center">
+        <input id="live-chat-user-input" type="text" maxlength="200" name="message" placeholder="Send us a message..." />
+        <button id="live-chat-submit" class="hidden-submit" type="submit"></button>
+      </form>
+      <button class="chat-modal-closer button-style1" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <title>Close pop up</title>
+          <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+      </button>
+    </section>
+  </dialog>
+
+  <dialog id="log-in-modal" class="covering-modal">
+    <div class="log-in-modal-closer background"></div>
+    <div class="container">
+      <section>
+
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/></svg><br/>
+          Log-In
+        </h3>
+
+        <form>
+          <div>
+            <label class="input-style1">
+              User Name:<br/>
+              <input type="text" name="user-name" required />
+            </label>
+          </div>
+          <div>
+            <label class="input-style1">
+              Password:<br/>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <div>
+            <button class="button-style1" type="submit">Log-In</button>
+          </div>
+        </form>
+
+        <div class="link-area">
+          <p>
+            Don't have an account?<br/>
+            <a class="link-style1" href="">Create an account</a>
+          </p>
+          <p>
+            Forgot your password?<br/>
+            <a class="link-style1" href="">Reset your password</a>
+          </p>
+        </div>
+        <div class="modal-closer-button-container">
+          <button class="log-in-modal-closer modal-closer-button button-style1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <title>Close pop up</title>
+              <path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+          </button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- SCRIPTS /////////////////////////////// -->
+  <script src="./programs/programs.js"></script>
+
+</body>
+</html>
