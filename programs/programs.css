@@ -1214,11 +1214,22 @@ svg path {
 
 /* PROGRAMS PORTRAIT /////////////////////////////////////////////// */
 main header {
+  position: relative;
   height: calc(var(--vph) - 5rem);
   text-align: center;
   line-height: 1.5;
   flex-direction: column;
   row-gap: 2rem;
+}
+
+@media only screen and (orientation: portrait) {
+  main header .background1 {
+    background-image: url("./assets/pic1-small.webp");
+    filter: brightness(0.2) blur(1px);
+  }
+  main .background2 {
+    display: none;
+  }
 }
 
 h2 {
@@ -1309,66 +1320,3 @@ main li a {
     padding: 1rem 2.5rem;
   }
 } 
-
-@media only screen and (orientation: landscape) {
-  main {
-    height: calc(var(--vph) - 5rem);
-  }
-  main header {
-    height: 30%;
-    row-gap: 1rem;
-    text-align: left;
-    align-items: flex-start !important;
-    padding-left: 3vw;
-  }
-
-  main header p {
-    max-width: none;
-    padding: 0;
-  }
-
-  main ul {
-    display: flex;
-    height: 70%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  main li {
-    border-width: 0.1rem;
-    border-style: solid;
-    width: 25%;
-    height: 100%;
-    row-gap: 0;
-    justify-content: space-around;
-  }
-
-  main li svg {
-    width: 90%;
-    height: 20%;
-    padding: 1rem;
-  }
-
-
-  main li p {
-    line-height: 1.5;
-  }
-
-  main li a {
-    padding: 0.5rem 1.5rem;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-height: 800px) {
-  main ul {
-    padding: 5vh 0;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-height: 900px) {
-  main li p {
-    line-height: 2;
-  }
-
-}

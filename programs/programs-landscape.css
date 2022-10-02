@@ -1,5 +1,6 @@
 @media only screen and (orientation: landscape) {
   main {
+    position: relative;
     height: calc(var(--vph) - 5rem);
   }
   main header {
@@ -8,6 +9,15 @@
     text-align: left;
     align-items: flex-start !important;
     padding-left: 3vw;
+  }
+
+  main .background1 {
+    display: none;
+  }
+
+  main .background2 {
+    background-image: url("./assets/pic1-small.webp");
+    filter: brightness(0.2) blur(2px);
   }
 
   main header p {
@@ -59,4 +69,25 @@
     line-height: 2;
   }
 
+}
+
+/* BACKGROUND IMAGES ///////////////////////////////// */
+@media only screen and (min-width: 600px) {
+  main .background1 {
+    background-image: url("./assets/pic1-medium.webp");
+  }
+
+  main .background2 {
+    background-image: url("./assets/pic1-medium.webp");
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main .background1 {
+    background-image: url("./assets/pic1-large.webp");
+  }
+
+  main .background2 {
+    background-image: url("./assets/pic1-large.webp");
+  }
 }

@@ -27,9 +27,7 @@ const snapPoints = Array.from(
   return snapPoint.getBoundingClientRect().top;
 });
 
-// let currentSnapPoint = 0;
 let currentSnapPoint = 0;
-// snap(true, false);
 
 
 

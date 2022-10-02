@@ -1,6 +1,7 @@
 main li {
   color: var(--color2-1);
   border-color: var(--color2-2);
+  background-color: var(--color1);
 }
 
 main li svg {
